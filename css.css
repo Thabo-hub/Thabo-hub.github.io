@@ -21,6 +21,12 @@ form input[type="text"]{
 	border-style:solid;
 	border-color:gray;
 }
+form input[type="password"]{
+	width:80%;
+	height:60px;
+	border-style:solid;
+	border-color:gray;
+}
 form input[type="button"]{
 	background-color:green;
 	padding:5px;
