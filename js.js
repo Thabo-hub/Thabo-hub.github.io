@@ -1,3 +1,4 @@
+
 const form = document.getElementById("form_id");
 const username = document.getElementById("name");
 const surname = document.getElementById("surname");
@@ -26,4 +27,4 @@ form.addEventListener("submit", (e) => {
       alert("Please register");
     }
   }
-});
+})
