@@ -42,6 +42,7 @@ const signUp = () => {
     // Creating a user if form validation is successful
     if (typeof Storage !== "undefined") {
       localStorage.setItem("user", JSON.stringify(user));
+      alert('Success! User data saved')
     } else {
       alert("we seem to have a problem");
     }
