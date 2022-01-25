@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Selft-sooth</title>
-	<link rel="styleSheet" href="css.css">
-</head>
-<body>
-<form id="form_id" method="post" name="myform">
-<h3>Login Form</h3><br>
-<label> Enter your name :</label>
-<input type="text" name="name" id="name"/>
-<br><br>
-<label> Enter your surname :</label>
-<input type="text" name="name" id="surname"/>
-<br><br>
-<label>Enter your password:</label>
-<br>
-<input type="password" name="password" id="password"/>
-<br><br>
-<input type="button" value="Login" id="login" onclick="login"/>
-<input type="button" value="Register" id="register" onclick="register"/>
-</form>
-<script LANGUAGE = "javaScript" src="js.js">
-</script>
-</body>
+  <head>
+    <title>Self-sooth</title>
+    <link rel="styleSheet" href="css.css" />
+  </head>
+
+  <body>
+    <form id="form_id" method="post" name="myform">
+      <label for="name"> Enter your name :</label>
+      <input type="text" name="name" id="name" required />
+      <br /><br />
+      <label for="surname"> Enter your surname :</label>
+      <input type="text" name="name" id="surname" required />
+      <br /><br />
+      <label for="password">Enter your password:</label>
+      <input type="password" name="password" id="password" required />
+      <br /><br />
+      <button type="submit" value="login">Login</button>
+      <button type="submit" value="Register" id="register">Register</button>
+    </form>
+    <script type="text/javascript" src="./js.js"></script>
+  </body>
 </html>
