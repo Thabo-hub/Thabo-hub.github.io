@@ -11,10 +11,6 @@ form{
 }
 form h3{
 	text-align:center;
-	background-color:#64e986;
-	color:white;
-	margin-top:0px;
-	font-size:20px;
 }
 form input[type="text"]{
 	width:80%;
@@ -34,4 +30,8 @@ form input[type="button"]{
 	color:white;
 	border-style:solid;
 	border-color:green;
+}
+.head{
+	width:100%;
+	background-color:#a0daa9;
 }
