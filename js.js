@@ -1,50 +1,29 @@
-alert("Hellow Guys!");
-// variable
-var username = document.getElementById("name");
-var surname = document.getElementById("surname");
-var password = document.getElementById("password");
+const form = document.getElementById("form_id");
+const username = document.getElementById("name");
+const surname = document.getElementById("surname");
+const password = document.getElementById("password");
 
-const userLogin = () => {
-  // Create a user variable - does this need to be herer???
-  const user = {
-    id: 1,
-    name: username,
-    surname: surname,
-    password: password,
-  };
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-  // check if user exists:
-  if (
-    localStorage.getItem(user.name) === username &&
-    localStorage.getItem(user.surname) === surname
-  ) {
-    alert("Welcome back");
-  } else {
-    alert("Please register");
-  }
-};
-
-const signUp = () => {
-  // Create a user variable
-  const user = {
-    id: 1,
-    name: document.getElementById("name"),
-    surname: document.getElementById("surname"),
-    password: document.getElementById("password"),
-  };
-  //   Check if uer exists:
-  if (
-    localStorage.getItem(user.name) === username &&
-    localStorage.getItem(user.surname) === surname
-  ) {
-    alert("User already exists");
-  } else {
-    // Creating a user if form validation is successful
-    if (typeof Storage !== "undefined") {
-      localStorage.setItem("user", JSON.stringify(user));
-      alert('Success! User data saved')
+  if (username && surname && password) {
+    // Create a user variable - does this need to be herer???
+    const user = {
+      id: 1,
+      name: username.value,
+      surname: surname.value,
+      password: password.value,
+    };
+    // Test
+    console.log(user);
+    // check if user exists:
+    if (
+      localStorage.getItem(user.name) === username &&
+      localStorage.getItem(user.surname) === surname
+    ) {
+      alert("Welcome back");
     } else {
-      alert("we seem to have a problem");
+      alert("Please register");
     }
   }
-};
+});
