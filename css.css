@@ -1,7 +1,13 @@
 body{
 	background-color:#8be0ba;
 }
+@keyframes Flip{
+	20%{transform:rotateY(180deg)}
+}
 form{
+	animation-name:Flip;
+	animation-duration:3s;
+	animation-timing-function:ease-in-out;
 	text-align:center;
 	background-color:white;
 	color:green;
@@ -58,9 +64,9 @@ h2{
 	width:20px;
 	height:20px;
 	border-radius:50%;
-	box-shadow:0 0 10px black;
+	box-shadow:0 0 10px white;
 	float:left;
-	background-color:black;
+	background-color:white;
 	position:relative;
 	left:-300px;
 	top:-700px;
@@ -74,9 +80,9 @@ h2{
 	width:30px;
 	height:30px;
 	border-radius:50%;
-	box-shadow:0 0 10px black;
+	box-shadow:0 0 10px white;
 	float:left;
-	background-color:black;
+	background-color:white;
 	position:relative;
 	left:-200px;
 	top:-700px;
@@ -90,9 +96,9 @@ h2{
 	width:40px;
 	height:40px;
 	border-radius:50%;
-	box-shadow:0 0 10px black;
+	box-shadow:0 0 10px white;
 	float:left;
-	background-color:black;
+	background-color:white;
 	position:relative;
 	left:-100px;
 	top:-700px;
@@ -106,9 +112,9 @@ h2{
 	width:50px;
 	height:50px;
 	border-radius:50%;
-	box-shadow:0 0 10px black;
+	box-shadow:0 0 10px white;
 	float:left;
-	background-color:black;
+	background-color:white;
 	position:relative;
 	left:600px;
 	top:-700px;
@@ -122,9 +128,9 @@ h2{
 	width:60px;
 	height:60px;
 	border-radius:50%;
-	box-shadow:0 0 10px black;
+	box-shadow:0 0 10px white;
 	float:left;
-	background-color:black;
+	background-color:white;
 	position:relative;
 	left:700px;
 	top:-700px;
@@ -138,9 +144,9 @@ h2{
 	width:30px;
 	height:30px;
 	border-radius:50%;
-	box-shadow:0 0 10px black;
+	box-shadow:0 0 10px white;
 	float:left;
-	background-color:black;
+	background-color:white;
 	position:relative;
 	left:800px;
 	top:-700px;
@@ -154,9 +160,9 @@ h2{
 	width:20px;
 	height:20px;
 	border-radius:50%;
-	box-shadow:0 0 10px black;
+	box-shadow:0 0 10px white;
 	float:left;
-	background-color:black;
+	background-color:white;
 	position:relative;
 	left:900px;
 	top:-700px;
@@ -170,9 +176,9 @@ h2{
 	width:70px;
 	height:70px;
 	border-radius:50%;
-	box-shadow:0 0 10px black;
+	box-shadow:0 0 10px white;
 	float:left;
-	background-color:black;
+	background-color:white;
 	position:relative;
 	left:950px;
 	top:-700px;
@@ -186,9 +192,9 @@ h2{
 	width:6px;
 	height:6px;
 	border-radius:50%;
-	box-shadow:0 0 10px black;
+	box-shadow:0 0 10px white;
 	float:left;
-	background-color:black;
+	background-color:white;
 	position:relative;
 	left:200px;
 	top:-700px;
@@ -202,9 +208,9 @@ h2{
 	width:3px;
 	height:3px;
 	border-radius:50%;
-	box-shadow:0 0 10px black;
+	box-shadow:0 0 10px white;
 	float:left;
-	background-color:black;
+	background-color:white;
 	position:relative;
 	left:-100px;
 	top:-700px;
@@ -218,9 +224,9 @@ h2{
 	width:13px;
 	height:13px;
 	border-radius:50%;
-	box-shadow:0 0 10px black;
+	box-shadow:0 0 10px white;
 	float:left;
-	background-color:black;
+	background-color:white;
 	position:relative;
 	left:-200px;
 	top:-700px;
@@ -234,9 +240,9 @@ h2{
 	width:13px;
 	height:13px;
 	border-radius:50%;
-	box-shadow:0 0 10px black;
+	box-shadow:0 0 10px white;
 	float:left;
-	background-color:black;
+	background-color:white;
 	position:relative;
 	left:600px;
 	top:-700px;
@@ -250,9 +256,9 @@ h2{
 	width:7px;
 	height:7px;
 	border-radius:50%;
-	box-shadow:0 0 10px black;
+	box-shadow:0 0 10px white;
 	float:left;
-	background-color:black;
+	background-color:white;
 	position:relative;
 	left:820px;
 	top:-700px;
