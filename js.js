@@ -45,7 +45,14 @@ registerForm.addEventListener("submit", (e) => {
     localStorage.getItem(user.name) === username.value &&
     localStorage.getItem(user.surname) === surname.value
   ) {
-    alert("User already exists");
+    //   check if password is correct
+    if(localStorage.getItem(user.password)=== password.value){
+        alert("User already exists");
+
+    }else {
+        alert('incorrect password')
+    }
+    
   } else {
     // Creating a user if form validation is successful
     if (typeof Storage !== "undefined") {
