@@ -1,5 +1,5 @@
 body{
-	background-color:red;
+	background-color:green;
 }
 form{
 	background-color:#333;
@@ -11,4 +11,19 @@ form{
 .form h3{
 	background-color:#006400;
 	color:white;
+	margin-top:0px;
+	font-size:20px;
+}
+form input[type="text"]{
+	width:80%;
+	height:60px;
+	border-style:solid;
+	border-color:gray;
+}
+form input[type="button"]{
+	background-color:green;
+	padding:5px;
+	color:white;
+	border-style:solid;
+	border-color:green;
 }
