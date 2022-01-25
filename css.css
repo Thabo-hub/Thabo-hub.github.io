@@ -2,36 +2,263 @@ body{
 	background-color:#8be0ba;
 }
 form{
+	text-align:center;
 	background-color:white;
 	color:green;
 	width:30%;
 	margin:auto;
 	padding:20px;
 	border-radius:5px;
+	box-shadow:0 0 8px white;
+	position:relative;
+	top:100px;
 }
 form h3{
 	text-align:center;
 }
 form input[type="text"]{
+	border-radius:10px;
 	width:80%;
 	height:60px;
 	border-style:solid;
 	border-color:gray;
 }
 form input[type="password"]{
+	border-radius:10px;
 	width:80%;
 	height:60px;
 	border-style:solid;
 	border-color:gray;
 }
 form input[type="button"]{
+	border-radius:10px;
+	width:70%;
 	background-color:green;
 	padding:5px;
 	color:white;
 	border-style:solid;
 	border-color:green;
 }
-.head{
-	width:100%;
-	background-color:#a0daa9;
+form a{
+	text-decoration:none;
+	color:orange;
+}
+h2{
+	text-align:center;
+}
+@keyframes move{
+	from{
+		top:-700px;
+	}to{
+		top:250px;
+		display:none;
+	}
+}
+.ball1{
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	box-shadow:0 0 10px black;
+	float:left;
+	background-color:black;
+	position:relative;
+	left:-300px;
+	top:-700px;
+	animation-name:move;
+	animation-duration:12s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+	z-index:1;
+}
+.ball2{
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	box-shadow:0 0 10px black;
+	float:left;
+	background-color:black;
+	position:relative;
+	left:-200px;
+	top:-700px;
+	animation-name:move;
+	animation-duration:13s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+	z-index:1;
+}
+.ball3{
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	box-shadow:0 0 10px black;
+	float:left;
+	background-color:black;
+	position:relative;
+	left:-100px;
+	top:-700px;
+	animation-name:move;
+	animation-duration:14s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+	z-index:1;
+}
+.ball4{
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	box-shadow:0 0 10px black;
+	float:left;
+	background-color:black;
+	position:relative;
+	left:600px;
+	top:-700px;
+	animation-name:move;
+	animation-duration:14s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+	z-index:1;
+}
+.ball5{
+	width:60px;
+	height:60px;
+	border-radius:50%;
+	box-shadow:0 0 10px black;
+	float:left;
+	background-color:black;
+	position:relative;
+	left:700px;
+	top:-700px;
+	animation-name:move;
+	animation-duration:15s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+	z-index:1;
+}
+.ball6{
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	box-shadow:0 0 10px black;
+	float:left;
+	background-color:black;
+	position:relative;
+	left:800px;
+	top:-700px;
+	animation-name:move;
+	animation-duration:15s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+	z-index:1;
+}
+.ball7{
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	box-shadow:0 0 10px black;
+	float:left;
+	background-color:black;
+	position:relative;
+	left:900px;
+	top:-700px;
+	animation-name:move;
+	animation-duration:16s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+	z-index:1;
+}
+.ball8{
+	width:70px;
+	height:70px;
+	border-radius:50%;
+	box-shadow:0 0 10px black;
+	float:left;
+	background-color:black;
+	position:relative;
+	left:950px;
+	top:-700px;
+	animation-name:move;
+	animation-duration:17s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+	z-index:1;
+}
+.ball9{
+	width:6px;
+	height:6px;
+	border-radius:50%;
+	box-shadow:0 0 10px black;
+	float:left;
+	background-color:black;
+	position:relative;
+	left:200px;
+	top:-700px;
+	animation-name:move;
+	animation-duration:17s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+	z-index:1;
+}
+.ball10{
+	width:3px;
+	height:3px;
+	border-radius:50%;
+	box-shadow:0 0 10px black;
+	float:left;
+	background-color:black;
+	position:relative;
+	left:-100px;
+	top:-700px;
+	animation-name:move;
+	animation-duration:19s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+	z-index:1;
+}
+.ball11{
+	width:13px;
+	height:13px;
+	border-radius:50%;
+	box-shadow:0 0 10px black;
+	float:left;
+	background-color:black;
+	position:relative;
+	left:-200px;
+	top:-700px;
+	animation-name:move;
+	animation-duration:20s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+	z-index:1;
+}
+.ball12{
+	width:13px;
+	height:13px;
+	border-radius:50%;
+	box-shadow:0 0 10px black;
+	float:left;
+	background-color:black;
+	position:relative;
+	left:600px;
+	top:-700px;
+	animation-name:move;
+	animation-duration:25s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+	z-index:1;
+}
+.ball13{
+	width:7px;
+	height:7px;
+	border-radius:50%;
+	box-shadow:0 0 10px black;
+	float:left;
+	background-color:black;
+	position:relative;
+	left:820px;
+	top:-700px;
+	animation-name:move;
+	animation-duration:30s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+	z-index:1;
 }
