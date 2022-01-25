@@ -8,19 +8,19 @@
 	<h2>Welcome to our Website</h2>
 <form id="form_id" method="post" name="myform">
 <h3>Login Form</h3><br>
-<label> Enter your name :</label>
+<label for='name'> Enter your name :</label>
 <input type="text" name="name" id="name"/>
 <br><br>
-<label> Enter your surname :</label>
+<label for='surname'> Enter your surname :</label>
 <input type="text" name="name" id="surname"/>
 <br><br>
-<label>Enter your password:</label>
+<label for='password'>Enter your password:</label>
 <br>
 <input type="password" name="password" id="password"/>
 <br><br>
-<input type="button" value="Login" id="login" onclick="login"/>
+<input type="submit" value="Login"/>
 <br>
-<p>Dont have an account? <a href="register.html">Register Now</a></p>
+<p>Dont have an account? <a href="./register.html">Register Now</a></p>
 <!--<input type="button" value="Register" id="register" onclick="register"/>
 -->
 </form>
@@ -51,7 +51,7 @@
 <span class="ball13">
 </span>
 </form>
-<script LANGUAGE = "javaScript" src="js.js">
+<script type='text/javascript' src="./js.js">
 </script>
 </body>
 </html>
