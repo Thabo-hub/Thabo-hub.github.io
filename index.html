@@ -3,20 +3,20 @@
 
 <head>
 	<title>Selft-sooth</title>
-	<link rel="styleSheet" href="css.css">
+	<link rel="stylesheet" href="./css.css">
 </head>
 
 <body>
 	<!-- Login Form -->
-	<div class='login-container'>
+	<div class='login-container' id='login-container'>
 		<h2>Welcome to our Website</h2>
-		<form id="form_id" method="GET" name="myform" action='/'>
+		<form id="login-form" method="GET" name="myform" action='/'>
 			<h3>Login Form</h3><br>
 			<label for='name'> Enter your name :</label>
 			<input type="text" name="name" id="name" />
 			<br><br>
 			<label for='surname'> Enter your surname :</label>
-			<input type="text" name="name" id="surname" />
+			<input type="text" name="surname" id="surname" />
 			<br><br>
 			<label for='password'>Enter your password:</label>
 			<br>
@@ -25,28 +25,28 @@
 			<input type="submit" value="Login" />
 			<br>
 		</form>
-		<!-- I have moved the button to render the form outside of the form so that it does no trigger a submit event when you click it -->
-		<p>Dont have an account? <button class='renderForm' onclick='goToRegister()'>Register Now</button></p>
+		<!-- For Thabo: I have moved the button to render the form outside of the form so that it does no trigger a submit event when you click it -->
+		<p class='renderForm'>Dont have an account? <button  onclick='goToRegister()'>Register Now</button></p>
 	</div>
 	<!-- Registration Form -->
-	<div class="register-container">
+	<div class="register-container" id='register-container'>
 		<h2>Welcome to our Website</h2>
-		<form id="register" method="GET" name="myform">
+		<form id="reg-form" method="GET" name="myform">
 			<h3>Register Below</h3><br>
 			<label for='name'> Enter your name :</label>
 			<input type="text" name="name" id="name" required />
 			<br><br>
 			<label for='surname'> Enter your surname :</label>
-			<input type="text" name="name" id="surname" required />
+			<input type="text" name="surname" id="surname" required />
 			<br><br>
 			<label for='password'>Enter your password:</label>
 			<br>
 			<input type="password" name="password" id="password" required />
 			<br><br>
-			<button type='submit'>Register</button>
+			<input type='submit' value='Register'/>
 			<br>
 		</form>
-		<p>Go back and <button onclick='goToLogin()'>Login Now</a></p>
+		<p class='renderForm'>Go back and <button onclick='goToLogin()' >Login Now</a></p>
 	</div>
 
 	<div class="ball1">
