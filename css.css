@@ -1,5 +1,5 @@
 body{
-	background-color:#8be0ba;
+	background-image:linear-gradient(to right,#8be0ba,white);
 }
 @keyframes Flip{
 	20%{transform:rotateY(180deg)}
@@ -21,6 +21,11 @@ form{
 }
 form h3{
 	text-align:center;
+	width:100%;
+	margin-left:0px;
+	margin-top:0;
+	color:green;
+	padding:5px;
 }
 form input[type="text"]{
 	border-radius:10px;
@@ -36,7 +41,7 @@ form input[type="password"]{
 	border-style:solid;
 	border-color:gray;
 }
-form input[type="button"]{
+form input[type="submit"]{
 	border-radius:10px;
 	width:70%;
 	background-color:green;
@@ -49,7 +54,7 @@ form a{
 	text-decoration:none;
 	color:orange;
 }
-h2{
+h2,h4{
 	text-align:center;
 }
 @keyframes move{
