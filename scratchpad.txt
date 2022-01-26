@@ -1,0 +1,24 @@
+    // check if user exists:
+    var checkUser = localStorage.getItem(username.value);
+    var obj = JSON.parse(checkUser);
+    if (obj) {
+      if (
+        obj.name === username.value &&
+        obj.surname === surname.value &&
+        obj.password === password.value
+      ) {
+        alert("This account already exists. Please return to Login");
+      }
+    } else {
+      // Create a user variable
+      if (username.value && surname.value && password.value) {
+        const newUser = {
+          name: username.value,
+          surname: surname.value,
+          password: password.value,
+        };
+        //   Create new user
+        localStorage.setItem(username.value, JSON.stringify(newUser));
+        alert("Success! User data saved");
+      }
+    }
