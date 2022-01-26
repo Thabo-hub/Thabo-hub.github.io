@@ -1,57 +1,83 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Selft-sooth</title>
 	<link rel="styleSheet" href="css.css">
 </head>
+
 <body>
-	<h2>Welcome to our Website</h2>
-<form id="form_id" method="post" name="myform">
-<h3>Login Form</h3><br>
-<label for='name'> Enter your name :</label>
-<input type="text" name="name" id="name"/>
-<br><br>
-<label for='surname'> Enter your surname :</label>
-<input type="text" name="name" id="surname"/>
-<br><br>
-<label for='password'>Enter your password:</label>
-<br>
-<input type="password" name="password" id="password"/>
-<br><br>
-<input type="submit" value="Login"/>
-<br>
-<p>Dont have an account? <a href="./register.html">Register Now</a></p>
-<!--<input type="button" value="Register" id="register" onclick="register"/>
--->
-</form>
-<div class="ball1">
-</div>
-<span class="ball2">
-</span>
-<span class="ball3">
-</span>
-<span class="ball4">
-</span>
-<span class="ball5">
-</span>
-<span class="ball6">
-</span>
-<span class="ball7">
-</span>
-<span class="ball8">
-</span>
-<span class="ball9">
-</span>
-<span class="ball10">
-</span>
-<span class="ball11">
-</span>
-<span class="ball12">
-</span>
-<span class="ball13">
-</span>
-</form>
-<script type='text/javascript' src="./js.js">
-</script>
+	<!-- Login Form -->
+	<div class='login-container'>
+		<h2>Welcome to our Website</h2>
+		<form id="form_id" method="GET" name="myform" action='/'>
+			<h3>Login Form</h3><br>
+			<label for='name'> Enter your name :</label>
+			<input type="text" name="name" id="name" />
+			<br><br>
+			<label for='surname'> Enter your surname :</label>
+			<input type="text" name="name" id="surname" />
+			<br><br>
+			<label for='password'>Enter your password:</label>
+			<br>
+			<input type="password" name="password" id="password" />
+			<br><br>
+			<input type="submit" value="Login" />
+			<br>
+		</form>
+		<!-- I have moved the button to render the form outside of the form so that it does no trigger a submit event when you click it -->
+		<p>Dont have an account? <button class='renderForm' onclick='goToRegister()'>Register Now</button></p>
+	</div>
+	<!-- Registration Form -->
+	<div class="register-container">
+		<h2>Welcome to our Website</h2>
+		<form id="register" method="GET" name="myform">
+			<h3>Register Below</h3><br>
+			<label for='name'> Enter your name :</label>
+			<input type="text" name="name" id="name" required />
+			<br><br>
+			<label for='surname'> Enter your surname :</label>
+			<input type="text" name="name" id="surname" required />
+			<br><br>
+			<label for='password'>Enter your password:</label>
+			<br>
+			<input type="password" name="password" id="password" required />
+			<br><br>
+			<button type='submit'>Register</button>
+			<br>
+		</form>
+		<p>Go back and <button onclick='goToLogin()'>Login Now</a></p>
+	</div>
+
+	<div class="ball1">
+	</div>
+	<span class="ball2">
+	</span>
+	<span class="ball3">
+	</span>
+	<span class="ball4">
+	</span>
+	<span class="ball5">
+	</span>
+	<span class="ball6">
+	</span>
+	<span class="ball7">
+	</span>
+	<span class="ball8">
+	</span>
+	<span class="ball9">
+	</span>
+	<span class="ball10">
+	</span>
+	<span class="ball11">
+	</span>
+	<span class="ball12">
+	</span>
+	<span class="ball13">
+	</span>
+	</form>
+	<script type='text/javascript' src="./js.js">
+	</script>
 </body>
+
 </html>
