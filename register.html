@@ -6,19 +6,19 @@
 </head>
 <body>
 	<h2>Welcome to our Website</h2>
-<form id="form_id" method="post" name="myform">
-<h3>Register Bellow</h3><br>
-<label> Enter your name :</label>
-<input type="text" name="name" id="name"/>
+<form id="register" method="GET" name="myform">
+<h3>Register Below</h3><br>
+<label for='name'> Enter your name :</label>
+<input type="text" name="name" id="name" required/>
 <br><br>
-<label> Enter your surname :</label>
-<input type="text" name="name" id="surname"/>
+<label for='surname'> Enter your surname :</label>
+<input type="text" name="name" id="surname" required/>
 <br><br>
-<label>Enter your password:</label>
+<label for='password'>Enter your password:</label>
 <br>
-<input type="password" name="password" id="password"/>
+<input type="password" name="password" id="password" required/>
 <br><br>
-<input type="button" value="Rgister" id="login" onclick="login"/>
+<button type='submit'>Register</button>
 <br>
 <p>Go back and <a href="index.html">Login Now</a></p>
 <!--<input type="button" value="Register" id="register" onclick="register"/>
@@ -51,7 +51,7 @@
 <span class="ball13">
 </span>
 </form>
-<script LANGUAGE = "javaScript" src="js.js">
+<script type='text/javascript' src="./register.js">
 </script>
 </body>
 </html>
